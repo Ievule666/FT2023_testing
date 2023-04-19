@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FT2023 testing</string>
+    <string name="button">Button</string>
+    <string name="name">Name</string>
+    <string name="chars_selection">Chars</string>
+    <string name="words_selected">words</string>
+    <string-array name="options_array">
+        <item>Chars</item>
+        <item>Words</item>
+    </string-array>
+</resources>
