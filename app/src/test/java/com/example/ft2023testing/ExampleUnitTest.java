@@ -18,15 +18,23 @@ public class ExampleUnitTest {
         int expectedValue = 0;
         int actualValue = TextCounter.getWordsCount(givenString);
 
-        assertEquals(expectedValue, actualValue); {
+        assertEquals(expectedValue, actualValue);
 
     }
-    }
     @Test
-    public void getWordsCount_Given_SpacesString_Result_Four() {
-        String givenString = "    ";
+    public void getWordsCount_Given_String_Result_Four() {
+        String givenString = "labas rytas sakau tau   ";
         int expectedValue = 4;
         int actualValue = TextCounter.getWordsCount(givenString);
+
+        assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    public void getWhiteSpacesCount_Given_SpacesString_Result_Four() {
+        String givenString = "    ";
+        int expectedValue = 4;
+        int actualValue = TextCounter.countWhitespaces(givenString);
 
         assertEquals(expectedValue, actualValue); {
 }}}

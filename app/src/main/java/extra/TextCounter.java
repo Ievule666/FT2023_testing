@@ -3,7 +3,12 @@ package extra;
 public class TextCounter {
     public static int getWordsCount(String input) {
         String words = input.trim();
-        return words.split("\\s+").length;
+        if(words.isEmpty()) {
+            return 0;
+        }
+        else{
+            return words.split("\\s+").length;
+        }
     }
 
     public static int getCharsCount(String inputString){
@@ -19,5 +24,5 @@ public class TextCounter {
                 count++;
             }
         }
-        return 0;
+        return count;
     }}
